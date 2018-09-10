@@ -1,0 +1,10 @@
+lista = list()
+
+while True:
+    numero = float(input("Digite o número: "))
+    if numero not in lista:
+        lista.append(numero)
+    resp = input("Deseja continuar? (s/n): ")
+    if resp == "n":
+        print(sorted(lista))
+        break
